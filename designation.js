@@ -12,13 +12,13 @@ function getRandomInt(min, max) {
 }
 
 function generateName(){
-	var name1 = ["Senior","Junior","Intern","Associate"];
+	var name1 = [" MT Lab", "NTP"];
 
  
 
 	var name2 = ["SalesMAn", "Admin" , "IT Executive", "Marketing Executive", "Developer", "Nurse", "Doctor"];
 
-	var name = capFirst(name1[getRandomInt(0, name1.length + 1)]) + ' ' + capFirst(name2[getRandomInt(0, name2.length + 1)]);
+	var name = capFirst(name1[getRandomInt(0, name1.length + 1)]);
 	return name;
 
 }

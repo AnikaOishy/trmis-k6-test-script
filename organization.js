@@ -15,16 +15,24 @@ function getRandomInt(min, max) {
 }
 
 function generateName(){
-    var name1 = ["abandoned","able","absolute","adorable","adventurous","academic","acceptable","acclaimed","accomplished","accurate","aching","acidic","acrobatic","active","actual","adept","admirable","admired","adolescent","adorable","adored","advanced","afraid","affectionate","aged","aggravating","aggressive","agile","agitated","agonizing","agreeable","ajar","alarmed","alarming","alert","alienated","alive","all",];
+    var name1 = ["BRAC","IDDS","GFATM","GOB"];
 
 	var name2 = ["pop","punch","quit","reply","representative","resist","rip","rub","silly","smile","spell","stretch","stupid","tear","temporary","tomorrow","wake","wrap","yesterday","Thomas","Tom","Lieuwe",];
 
-	var name = capFirst(name1[getRandomInt(0, name1.length + 1)]) + ' ' + capFirst(name2[getRandomInt(0, name2.length + 1)]);
+	var name = capFirst(name1[getRandomInt(0, name1.length + 1)]);
 	return name;
 
 }
 
+function generateRemark(){
+  var name1 = ["International development organization", "Non-profit organization focused on infectious diseases", "Global fund to fight AIDS, tuberculosis and malaria", "Government of Bangladesh"];
 
+var name2 = ["pop","punch","quit","reply","representative","resist","rip","rub","silly","smile","spell","stretch","stupid","tear","temporary","tomorrow","wake","wrap","yesterday","Thomas","Tom","Lieuwe",];
+
+var name = capFirst(name1[getRandomInt(0, name1.length + 1)]);
+return name;
+
+}
 
 export const options = {
   scenarios: {
@@ -45,7 +53,7 @@ export default function () {
     
         "name": generateName(),
         "serial_no": Math.floor(Math.random() * 100000),
-        "remarks": "Very Good 1234"
+        "remarks": generateRemark()
   
     
   });

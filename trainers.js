@@ -27,7 +27,13 @@ function generateName() {
     return name;
 
 }
+function generateArea() {
+    var name1 = ["Training", "Orientation", "Session", "Medicine", "Surgery", "Consultant"];
 
+    var name = name1[getRandomInt(1, 60)];
+    return name;
+
+}
 
 
 
@@ -38,7 +44,7 @@ export const options = {
         my_scenario1: {
             executor: 'constant-arrival-rate',
             duration: '10s', // total duration
-            preAllocatedVUs: 10, // to allocate runtime resources     preAll
+            preAllocatedVUs: 11, // to allocate runtime resources     preAll
 
             rate: 1, // number of constant iterations given `timeUnit`
             timeUnit: '1s',
@@ -49,23 +55,34 @@ export const options = {
 export default function () {
     const payload = JSON.stringify({
 
-        "phone": Math.floor(Math.random() * 100000000),
+        // "phone": Math.floor(Math.random() * 100000000),
+        // "name": generateName(),
+        // "emg_phone": Math.floor(Math.random() * 10000000),
+        // "nid": Math.floor(Math.random() * 10000000),
+        // "email": generateNamemail(),
+        // "gender": 1,
+        // "marital_status": 1,
+        // "address": generateAddress(),
+        // "dob": "2023-01-24",
+        // "designation": getRandomInt(28, 29),
+        // "grade": 1,
+        // "organization": getRandomInt(10, 13),
+        // "division": getRandomInt(1, 8),
+        // "district": getRandomInt(1, 64),
+        // "sub_district": getRandomInt(1, 491),
+        "phone": Math.floor(Math.random() * 10000000),
+        "gender": 3,
         "name": generateName(),
-        "emg_phone": Math.floor(Math.random() * 10000000),
         "nid": Math.floor(Math.random() * 10000000),
         "email": generateNamemail(),
-        "gender": 1,
-        "marital_status": 1,
         "address": generateAddress(),
-        "dob": "2023-01-24",
-        "designation": getRandomInt(28, 29),
-        "grade": 1,
-        "organization": getRandomInt(10, 13),
-        "division": getRandomInt(1, 8),
-        "district": getRandomInt(1, 64),
-        "sub_district": getRandomInt(1, 491),
-
-
+        "designation": getRandomInt(1,2),
+        "organization": getRandomInt(1,2),
+        "division":  1,
+        "district":  1,
+        "sub_district":  1,
+        "area_of_specialization": "OK",
+        "hris": Math.floor(Math.random() * 10000000)
 
     });
     const headers = { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + accesso };

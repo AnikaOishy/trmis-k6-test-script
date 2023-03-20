@@ -9,12 +9,12 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
 }
 function generateNamemail() {
-    var name1 = ["Emma", "Olivia", "Ava", "Isabella", "Sophia", "Charlotte", "Mia", "Amelia", "Harper", "Evelyn", "Abigail", "Emily", "Elizabeth", "Mila", "Ella", "Avery", "Sofia", "Camila", "Aria", "Scarlett", "Victoria", "Madison", "Luna", "Grace", "Chloe", "Penelope", "Layla", "Riley", "Zoe", "Natalie", "Leah", "Hannah", "Lillian", "Evelyn", "Addison", "Aubree", "Ellie", "Stella", "Natalie", "Zoey", "Jasmine", "Hazel", "Natalie", "Aurora", "Brooklyn", "Bella", "Claire", "Skylar", "Liliana", "Natalie", "Aubree", "Rylee", "Allison", "Brooklyn", "Brielle", "Adalyn", "Raelynn", "Maria", "Athena", "Ximena", "Avery", "Aaliyah", "Jordyn", "Mackenzie", "Adalynn", "Harmony", "Adeline", "Ryleigh", "Melody", "Isabelle", "Brooklyn", "Arya", "Annabelle", "Kaylee", "Aaliyah", "Aurora", "Hailee", "Jasmine", "Gianna", "Aubree", "Bella", "Autumn", "Makayla", "Avery", "Brooklyn", "Brooklynn", "Bella", "Adalynn", "Raelynn", "Maria", "Lydia", "Peyton", "Makayla", "Avery", "Mariana", "Avery", "Eleanor", "Cameron", "Adalyn", "Makayla", "Avery", "Aria", "Avery", "Maria", "Naomi", "Avery", "Avery", "Mackenzie", "Autumn", "Makayla", "Avery", "Avery", "Maria", "Mackenzie", "Avery", "Maria", "Makayla", "Maria", "Avery", "Avery", "Maria", "Makayla", "Maria", "Avery", "Avery", "Maria", "Makayla", "Maria", "Avery", "Avery", "Maria", "Makayla", "Maria", "Avery", "Avery"];
+    var name1 = ["Md. Omar Faruk", "Md. Nazibul Haque", "Md. Hasibul Islam", "Nasrin Jahan Nipa", "Chondon Mondal", "Mst. Taslima Akter", "Md. Zakaria", "Imran Ali", "Mst. Sharmin Akter", "Md. Millat Hossain", "Md. Ariful Islam", "Taharul Islam", "Parvej Mosharof", "Khairunnahar", "Shibly Akter", "Md. Tamim Islam", "Nasrin Akter", "Md. Zahid Ali", "Md. Mahbub Hossain", "Md. Sabbir Ahmed"];
     var ret = name1[getRandomInt(1,60)]+"@gmail.com"; 
     return ret;
 }
 function generateName() {
-    var name1 = ["Emma", "Olivia", "Ava", "Isabella", "Sophia", "Charlotte", "Mia", "Amelia", "Harper", "Evelyn", "Abigail", "Emily", "Elizabeth", "Mila", "Ella", "Avery", "Sofia", "Camila", "Aria", "Scarlett", "Victoria", "Madison", "Luna", "Grace", "Chloe", "Penelope", "Layla", "Riley", "Zoe", "Natalie", "Leah", "Hannah", "Lillian", "Evelyn", "Addison", "Aubree", "Ellie", "Stella", "Natalie", "Zoey", "Jasmine", "Hazel", "Natalie", "Aurora", "Brooklyn", "Bella", "Claire", "Skylar", "Liliana", "Natalie", "Aubree", "Rylee", "Allison", "Brooklyn", "Brielle", "Adalyn", "Raelynn", "Maria", "Athena", "Ximena", "Avery", "Aaliyah", "Jordyn", "Mackenzie", "Adalynn", "Harmony", "Adeline", "Ryleigh", "Melody", "Isabelle", "Brooklyn", "Arya", "Annabelle", "Kaylee", "Aaliyah", "Aurora", "Hailee", "Jasmine", "Gianna", "Aubree", "Bella", "Autumn", "Makayla", "Avery", "Brooklyn", "Brooklynn", "Bella", "Adalynn", "Raelynn", "Maria", "Lydia", "Peyton", "Makayla", "Avery", "Mariana", "Avery", "Eleanor", "Cameron", "Adalyn", "Makayla", "Avery", "Aria", "Avery", "Maria", "Naomi", "Avery", "Avery", "Mackenzie", "Autumn", "Makayla", "Avery", "Avery", "Maria", "Mackenzie", "Avery", "Maria", "Makayla", "Maria", "Avery", "Avery", "Maria", "Makayla", "Maria", "Avery", "Avery", "Maria", "Makayla", "Maria", "Avery", "Avery", "Maria", "Makayla", "Maria", "Avery", "Avery"];
+    var name1 = ["Md. Omar Faruk", "Md. Nazibul Haque", "Md. Hasibul Islam", "Nasrin Jahan Nipa", "Chondon Mondal", "Mst. Taslima Akter", "Md. Zakaria", "Imran Ali", "Mst. Sharmin Akter", "Md. Millat Hossain", "Md. Ariful Islam", "Taharul Islam", "Parvej Mosharof", "Khairunnahar", "Shibly Akter", "Md. Tamim Islam", "Nasrin Akter", "Md. Zahid Ali", "Md. Mahbub Hossain", "Md. Sabbir Ahmed"];
 
     var name = name1[getRandomInt(0, name1.length + 1)];
     return name;
@@ -22,7 +22,7 @@ function generateName() {
 }
 function generateAddress(){
     var numb = getRandomInt(1, 25) ;
-    var name1 = ["Emma", "Olivia", "Ava", "Isabella", "Sophia", "Charlotte", "Mia", "Amelia", "Harper", "Evelyn", "Abigail", "Emily", "Elizabeth", "Mila", "Ella", "Avery", "Sofia", "Camila", "Aria", "Scarlett", "Victoria", "Madison", "Luna", "Grace", "Chloe", "Penelope", "Layla", "Riley", "Zoe", "Natalie", "Leah", "Hannah", "Lillian", "Evelyn", "Addison", "Aubree", "Ellie", "Stella", "Natalie", "Zoey", "Jasmine", "Hazel", "Natalie", "Aurora", "Brooklyn", "Bella", "Claire", "Skylar", "Liliana", "Natalie", "Aubree", "Rylee", "Allison", "Brooklyn", "Brielle", "Adalyn", "Raelynn", "Maria", "Athena", "Ximena", "Avery", "Aaliyah", "Jordyn", "Mackenzie", "Adalynn", "Harmony", "Adeline", "Ryleigh", "Melody", "Isabelle", "Brooklyn", "Arya", "Annabelle", "Kaylee", "Aaliyah", "Aurora", "Hailee", "Jasmine", "Gianna", "Aubree", "Bella", "Autumn", "Makayla", "Avery", "Brooklyn", "Brooklynn", "Bella", "Adalynn", "Raelynn", "Maria", "Lydia", "Peyton", "Makayla", "Avery", "Mariana", "Avery", "Eleanor", "Cameron", "Adalyn", "Makayla", "Avery", "Aria", "Avery", "Maria", "Naomi", "Avery", "Avery", "Mackenzie", "Autumn", "Makayla", "Avery", "Avery", "Maria", "Mackenzie", "Avery", "Maria", "Makayla", "Maria", "Avery", "Avery", "Maria", "Makayla", "Maria", "Avery", "Avery", "Maria", "Makayla", "Maria", "Avery", "Avery", "Maria", "Makayla", "Maria", "Avery", "Avery"];
+    var name1 = ["Md. Omar Faruk", "Md. Nazibul Haque", "Md. Hasibul Islam", "Nasrin Jahan Nipa", "Chondon Mondal", "Mst. Taslima Akter", "Md. Zakaria", "Imran Ali", "Mst. Sharmin Akter", "Md. Millat Hossain", "Md. Ariful Islam", "Taharul Islam", "Parvej Mosharof", "Khairunnahar", "Shibly Akter", "Md. Tamim Islam", "Nasrin Akter", "Md. Zahid Ali", "Md. Mahbub Hossain", "Md. Sabbir Ahmed"];
     var addre = (numb+" "+name1[getRandomInt(0, name1.length + 1)]+" Road"+ " , Dhaka").toString();
     return addre;
 
@@ -34,8 +34,8 @@ export const options = {
     scenarios: {
         my_scenario1: {
             executor: 'constant-arrival-rate',
-            duration: '15s', // total duration
-            preAllocatedVUs: 16, // to allocate runtime resources     preAll
+            duration: '5s', // total duration
+            preAllocatedVUs: 5, // to allocate runtime resources     preAll
 
             rate: 1, // number of constant iterations given `timeUnit`
             timeUnit: '1s',
@@ -44,28 +44,49 @@ export const options = {
 };
 
 export default function () {
-    console.log("printing >>>")
     const payload = JSON.stringify({
+        // "phone": Math.floor(Math.random() * 10000000),
+        // "name": generateName(),
+        // "nid": Math.floor(Math.random() * 1000000),
+        // "email": generateNamemail(),
+        // "gender": getRandomInt(1, 3),
+        // "marital_status": getRandomInt(1, 3),
+        // "address": generateAddress(),
+        // "designation": getRandomInt(28, 29),
+        // "organization": getRandomInt(10, 13),
+        // "division": getRandomInt(1, 8),
+        // "district": getRandomInt(1, 64),
+        // "sub_district": getRandomInt(1, 491),
+
+        // "phone": Math.floor(Math.random() * 10000000),
+        // "gender": 3,
+        // "marital_status": 6,
+        // "name": generateName(),
+        // "nid": Math.floor(Math.random() * 10000000),
+        // "email": generateNamemail(),
+        // "address": generateAddress(),
+        // "designation": 1,
+        // "organization": 1,
+        // "division": 1,
+        // "district": 1,
+        // "sub_district": 1,
+        // "area_of_specialization": "OK",
+        // "dob": "2023-02-23",
+
         "phone": Math.floor(Math.random() * 10000000),
+        "gender": 2,
         "name": generateName(),
-        "emg_phone": Math.floor(Math.random() * 10000000),
-        "nid": Math.floor(Math.random() * 1000000),
+        "nid": Math.floor(Math.random() * 10000000),
         "email": generateNamemail(),
-        "gender": getRandomInt(1, 3),
-        "marital_status": getRandomInt(1, 3),
-        "dob": "2023-01-24",
         "address": generateAddress(),
-        "designation": getRandomInt(28, 29),
-        "grade": 1,
-        "organization": getRandomInt(10, 13),
-        "division": getRandomInt(1, 8),
-        "district": getRandomInt(1, 64),
-        "sub_district": getRandomInt(1, 491),
-        
-
-
-
-
+        "marital_status": 6,
+        "designation": getRandomInt(1,2),
+        "organization": getRandomInt(1,2),
+        "division": 1,
+        "district": 1,
+        "sub_district": 1,
+        "hris": Math.floor(Math.random() * 10000000)
+//        "hris": Math.floor(Math.random() * 2),
     });
     const headers = { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + accesso };
     http.post(url + "trainee/", payload, { headers });

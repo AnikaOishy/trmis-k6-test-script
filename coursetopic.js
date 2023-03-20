@@ -34,8 +34,8 @@ export const options = {
   scenarios: {
     my_scenario1: {
       executor: 'constant-arrival-rate',
-      duration: '10s', // total duration
-      preAllocatedVUs: 11, // to allocate runtime resources     preAll
+      duration: '5s', // total duration
+      preAllocatedVUs: 5, // to allocate runtime resources preAll
 
       rate: 1, // number of constant iterations given `timeUnit`
       timeUnit: '1s',
@@ -48,7 +48,7 @@ export default function () {
     
         "title": generateName(),
         "description": "string",
-        "training_course": generateDivision()
+        "training_course": getRandomInt(1,15)
       
 
     
